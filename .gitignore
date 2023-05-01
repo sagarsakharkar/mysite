@@ -6,6 +6,10 @@
 # Django migration folder
 migrations/
 __pycache__/
+.pytest_chache
+
+# Database
+db.sqlite3
 
 # Images
 profile_pics/
