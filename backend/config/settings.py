@@ -163,3 +163,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Authentication
 LOGIN_URL = "/sign-in/"
 LOGIN_REDIRECT_URL = "/"
+
+CELERY_BROKER_URL = "redis://redis:6379"
+CELERY_RESULT_BACKEND = "redis://redis:6379"

@@ -1,0 +1,18 @@
+# Docker Commands
+# Part 1 (Django Rest Framework)
+docker build --tag python-django .
+docker run --publish 8000:8000 python-django
+
+# Part 2 (React JS)
+docker build --tag node-react .
+docker run --publish 3000:3000 node-react
+
+# Part 3
+docker-compose build
+docker-compose up
+
+# Both at same time
+docker-compose up --build
+
+# For alpine docker image
+docker exec -it django_container sh 
